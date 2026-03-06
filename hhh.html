@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>站前天橋即景</title>
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;
+  font-weight:300;
+  background:#000;
+}
+
+/* 背景：相對路徑，給 GitHub / 本機都用 */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  padding: 24px 16px 44px;
+  background:
+    radial-gradient(1200px 800px at 20% 10%, rgba(255,255,255,.12), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(0,0,0,.22), rgba(0,0,0,.48)),
+    url("images/bg.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.hero-content{
+  position:relative;
+  max-width:900px;
+  margin:0 auto;
+  color:#fff;
+}
+
+/* 標題 */
+.hero-title{
+  text-align:center;
+  font-size:34px;
+  font-weight:600;
+  margin:8px 0 18px;
+  letter-spacing:.5px;
+  color:#fff;
+}
+
+/* GIF 卡片 */
+.img-box{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  background:#000;
+  box-shadow:0 14px 40px rgba(0,0,0,.35);
+}
+.img-box img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* 音訊播放器 */
+.audio-box{
+  margin-top:14px;
+  width:100%;
+  border-radius:16px;
+  padding:12px;
+  background:rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 12px 40px rgba(0,0,0,.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.audio-box audio{
+  width:100%;
+}
+
+/* 文字區 */
+.hero-text{
+  margin-top:18px;
+  font-size:20px;
+  line-height:1.9;
+  padding:18px;
+  border-radius:16px;
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 12px 40px rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.hero-text p{
+  text-indent:2em;
+  margin:12px 0;
+  font-weight:300;
+}
+
+@media(min-width:768px){
+  .hero-title{font-size:44px;}
+  .hero-text{font-size:22px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+
+    <h2 class="hero-title">站前天橋即景</h2>
+
+    <!-- GIF：相對路徑 -->
+    <div class="img-box">
+      <img src="images/pic01a.gif" alt="站前天橋即景（GIF）">
+    </div>
+
+    <!-- MP3：相對路徑 -->
+    <div class="audio-box">
+      <audio controls preload="metadata">
+        <source src="audio/sound01.mp3" type="audio/mpeg">
+        你的瀏覽器不支援音訊播放
+      </audio>
+    </div>
+
+    <!-- 文字 -->
+    <div class="hero-text">
+      <p>火車站前人行天橋原本座落於北門圓環東側，橫跨忠孝西路，連接臺北車站與鄰近區域，是旅客來車站的必經之地。2001年4月20日因景觀美化及工程需要而動工拆除。</p>
+      <p>圖中大亞百貨是亞洲廣場大樓的前身，橋拆除後經營不善，遭商業大戶收購，轉型為住商大樓。</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
